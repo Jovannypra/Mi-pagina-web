@@ -1,7 +1,114 @@
+/* Importar archivo CSS */
 @import "../NombrePrincipal/Menunombre.css";
 
+/* Variables */
+:root {
+    --animacion: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Animaciones */
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes flicker-1 {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    41.99% {
+        opacity: 1;
+    }
+
+    42% {
+        opacity: 0;
+    }
+
+    43% {
+        opacity: 0;
+    }
+
+    43.01% {
+        opacity: 1;
+    }
+
+    47.99% {
+        opacity: 1;
+    }
+
+    48% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    49.01% {
+        opacity: 1;
+    }
+}
+
+@keyframes flicker-1 {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    41.99% {
+        opacity: 1;
+    }
+
+    42% {
+        opacity: 0;
+    }
+
+    43% {
+        opacity: 0;
+    }
+
+    43.01% {
+        opacity: 1;
+    }
+
+    47.99% {
+        opacity: 1;
+    }
+
+    48% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    49.01% {
+        opacity: 1;
+    }
+}
+
+/* Estilos de las habilidades */
 .skills {
-    display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,24 +118,175 @@
 .skills__cajas {
     width: 120px;
     height: 120px;
+    text-align: center;
 }
 
-.skills__cajas_logo {
+.skills__cajas__logo {
     width: 90%;
     height: 90%;
+    text-align: center;
 }
 
-/* .cajaflex {
+/* Estilos de las habilidades individuales */
+.skills__cajas__logo__1,
+.skills__cajas__logo__2,
+.skills__cajas__logo__3,
+.skills__cajas__logo__4,
+.skills__cajas__logo__5,
+.skills__cajas__logo__6,
+.skills__cajas__logo__7,
+.skills__cajas__logo__8,
+.skills__cajas__logo__9,
+.skills__cajas__logo__10,
+.skills__cajas__logo__11 {
+    width: 90px;
+    height: 90px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 8px;
+}
 
-    color: blueviolet;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    text-align: center;
-    margin: 5px;
-    width: 100px;
-    border: solid;
+.skills__cajas__logo__1 {
+    background-image: url(../../Img/Skills/Logos/HTML.svg);
+}
 
-} */
+.skills__cajas__logo__1:hover {
+    background-image: url(../..//Img/Skills/porcentajes/html.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__2 {
+    background-image: url(../../Img/Skills/Logos/CSS.svg);
+}
+
+.skills__cajas__logo__2:hover {
+    background-image: url(../..//Img/Skills/porcentajes/css.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__3 {
+    background-image: url(../../Img/Skills/Logos/javascript\ logo.svg);
+}
+
+.skills__cajas__logo__3:hover {
+    background-image: url(../..//Img/Skills/porcentajes/javascript\ \(.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__4 {
+    background-image: url(../../Img/Skills/Logos/jquery.svg);
+}
+
+.skills__cajas__logo__4:hover {
+    background-image: url(../..//Img/Skills/porcentajes/jquery\ 2.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__5 {
+    background-image: url(../../Img/Skills/Logos/php.svg);
+}
+
+.skills__cajas__logo__5:hover {
+    background-image: url(../..//Img/Skills/porcentajes/php\ porcentaje.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__6 {
+    background-image: url(../../Img/Skills/Logos/node.svg);
+}
+
+.skills__cajas__logo__6:hover {
+    background-image: url(../..//Img/Skills/porcentajes/node\ barra.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__7 {
+    background-image: url(../../Img/Skills/Logos/react.svg);
+}
+
+.skills__cajas__logo__7:hover {
+    background-image: url(../..//Img/Skills/porcentajes/react\ barra.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__8 {
+    background-image: url(../../Img/Skills/Logos/github.svg);
+}
+
+.skills__cajas__logo__8:hover {
+    background-image: url(../..//Img/Skills/porcentajes/github\ barra.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__9 {
+    background-image: url(../../Img/Skills/Logos/git.svg);
+}
+
+.skills__cajas__logo__9:hover {
+    background-image: url(../..//Img/Skills/porcentajes/git\ barra.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__10 {
+    background-image: url(../../Img/Skills/Logos/bootstrap.svg);
+}
+
+.skills__cajas__logo__10:hover {
+    background-image: url(../..//Img/Skills/porcentajes/bootstrap\ barra.svg);
+    animation: var(--animacion);
+}
+
+.skills__cajas__logo__11 {
+    width: 95px;
+    height: 95px;
+    background-image: url(../../Img/Skills/Logos/psd.svg);
+}
+
+.skills__cajas__logo__11:hover {
+    background-image: url(../..//Img/Skills/porcentajes/Psd\ barra.svg);
+    animation: var(--animacion);
+}
+
+/* Estilos de mensaje */
+.skills__cajas__logo__12 {
+    width: 95px;
+    height: 95px;
+    background-image: url(../../Img/Skills/Logos/Pronto.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.skills__cajas__logo__12:hover {
+    background-image: url(../..//Img/Skills/porcentajes/pronto\ mensaje.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+    background-color: blueviolet;
+    animation: flicker-1 2s linear infinite both;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+    .skills__cajas__logo__12:hover {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .skills__cajas__logo__12:hover {
+        width: 95%;
+        height: 85%;
+    }
+}
