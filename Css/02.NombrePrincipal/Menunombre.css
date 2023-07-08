@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --Colorazul: hsl(202, 100%, 71%);
+    --Colorrosa: hsl(324, 81%, 71%);
+    --coloroliva: hsl(64, 76%, 71%);
+    --colormoka: hsl(36.136, 60%, 71%);
+    --colorrojo: hsl(353, 100%, 50%);
+    --colorblanco:hsl(0, 0%, 96%);
+}
+
+/* MI NOMBRE PRINCIPAL */
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+/* .miNombre {
+    
+}
+ */
+svg {
+    display: block;
+    font: 7.5em 'Montserrat';
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: var(--colorblanco);
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: var(--Colorazul);
+    animation-delay: -1s;
+}
+
+.text-copy:nth-child(2) {
+    stroke: var(--Colorrosa);
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: var(--coloroliva);
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: var(--colormoka);
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: var(--colorrojo);
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+/* Responsividad para dispositivos medianos y pequeños */
+
+@media only screen and (max-width: 768px) {
+    svg {
+        font-size: 8em;
+        margin-top:40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    svg {
+        font-size: 8em;
+        margin-top: 60px;
+    }
+}
+
+
+
+

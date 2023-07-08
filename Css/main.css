@@ -1,0 +1,63 @@
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@import "../NombrePrincipal/Menunombre.css";
+
+:root {
+    --Colorazul: hsl(202, 100%, 71%);
+    --Colorrosa: hsl(324, 81%, 71%);
+    --coloroliva: hsl(64, 76%, 71%);
+    --colormoka: hsl(36.136, 60%, 71%);
+    --colorrojo: hsl(353, 100%, 50%);
+    --colorblanco:hsl(0, 0%, 96%);
+}
+
+
+
+
+
+
+
+
+
+.flex-container2 {
+    
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(25, 79, 134);
+    margin-top: 200px;
+
+}
+
+
+
+.cajaflex {
+
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+    width: 100px;
+    border: solid;
+
+}
+
+
+
+.Tlogo1 {
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+

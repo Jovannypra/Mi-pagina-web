@@ -1,0 +1,77 @@
+@import "../NombrePrincipal/Menunombre.css";
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+.iconos {
+    width: 50px;
+    height: 50px;
+}
+
+.redes__caja {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+/*! animacion dispositivos grandes 3 botones */
+.redes__caja__animacion {
+    animation: blink-1 10s infinite alternate-reverse both;
+}
+
+@keyframes blink-1 {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.redes__caja__animacion:hover {
+    animation: none;
+}
+
+.redes__detalle__1 {
+    color: var(--colorrojo);
+}
+
+.redes__detalle__2 {
+    color: var(--Colorrosa);
+}
+
+.redes__detalle__3 {
+    color: var(--colormoka);
+}
+
+/*! Animacion salida hover 1 */
+.redes__detalle__1:hover {
+    color: var(--Colorazul);
+}
+
+.redes__detalle__2:hover {
+    color: var(--coloroliva);
+}
+
+.redes__detalle__3:hover {
+    color: var(--colorrojo);
+}
+
+/*! Diferentes dispositivos */
+@media only screen and (max-width: 480px) {
+    .redes {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .iconos {
+        width: 65px;
+        height: 65px;
+    }
+}

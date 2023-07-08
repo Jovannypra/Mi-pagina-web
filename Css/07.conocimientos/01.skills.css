@@ -1,0 +1,34 @@
+@import "../NombrePrincipal/Menunombre.css";
+
+.skills {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.skills__cajas {
+    width: 120px;
+    height: 120px;
+}
+
+.skills__cajas_logo {
+    width: 90%;
+    height: 90%;
+}
+
+/* .cajaflex {
+
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+    width: 100px;
+    border: solid;
+
+} */

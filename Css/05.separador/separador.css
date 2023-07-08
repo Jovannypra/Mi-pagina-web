@@ -1,0 +1,23 @@
+.separador {
+    width: 100%;
+}
+
+.separador__imagen {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+.separador__imagen{
+    margin-top: 100px;
+    
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .separador__imagen{
+        margin-top: 150px;
+    }
+}

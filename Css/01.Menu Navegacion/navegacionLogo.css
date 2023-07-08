@@ -1,0 +1,46 @@
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right:14px ;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo__principal {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo__caja2 {
+        align-self: center;
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .logo__principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+
+    .logo__menu {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .tamaño__letra {
+        font-size: 40px;
+    }
+}

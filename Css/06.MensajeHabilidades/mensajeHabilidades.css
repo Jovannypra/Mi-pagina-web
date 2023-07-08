@@ -1,0 +1,151 @@
+@import "../NombrePrincipal/Menunombre.css";
+
+
+.habilidades {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 100px;
+    width: 100%;
+    bottom: 45%;
+    display: block;
+}
+
+.habilidades__palabra__1 {
+    color: var(--colorrojo);
+}
+
+.habilidades__palabra__1:hover {
+    color: var(--coloroliva);
+}
+
+
+#cambio__habilidades {
+    height: 50px;
+    overflow: hidden;
+}
+
+#cambio__habilidades>div>div {
+    color: var(--colorblanco);
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#cambio__habilidades div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#cambio__habilidades div div {
+    background: var(--colormoka);
+    width: 400px;
+    height: 50px;
+}
+
+#cambio__habilidades div:first-child div {
+    background: var(--Colorazul);
+}
+
+#cambio__habilidades div:last-child div {
+    background: var(--Colorrosa);
+}
+
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+
+/*! Flechas y palabra aqui */
+
+.habilidades__palabra__aqui {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+
+.habilidades__iconos {
+    width: 50px;
+    height: 50px;
+}
+
+/*! movimiento de flechas */
+
+.habilidades__movimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.habilidades__movimiento__flecha {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid var(--coloroliva);
+    animation: moverAbajo  1s infinite alternate,cambioColor 2s infinite ; 
+    
+}
+
+@keyframes moverAbajo {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(200px);
+    }
+}
+
+@keyframes cambioColor {
+    0%, 10% {
+        border-top-color: var(--Colorazul);
+    }
+    20%, 30% {
+        border-top-color: var(--Colorrosa);
+    }
+    40%, 50% {
+        border-top-color: var(--coloroliva);
+    }
+    60%, 70% {
+        border-top-color: var(--colormoka);
+    }
+    80%, 100% {
+        border-top-color: var(--colorrojo);
+    }
+
+}
