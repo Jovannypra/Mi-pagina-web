@@ -5,7 +5,7 @@ const temaOscuro = () => {
 
 const temaClaro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "light");
-    document.getElementById("dl-icon").src = "./Img/Sin-título-1.gif";
+    document.getElementById("dl-icon").src = "./Img/Claro-gif.gif";
 };
 
 const cambiar = () => {
@@ -17,11 +17,13 @@ const cambiar = () => {
     }
 };
 
+
+
 let i = 1;
 
 document.addEventListener("DOMContentLoaded", () => {
     temaOscuro();
-     // Llama a la función changeImage1 cada 1 segundo
+    // Llama a la función changeImage1 cada 1 segundo
 });
 
 function changeImage1() {
