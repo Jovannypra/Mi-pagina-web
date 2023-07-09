@@ -1,0 +1,108 @@
+.estudios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.estudios__caja {
+
+    width: 400px;
+    height: 400px;
+}
+
+.estudios__caja__imagenes__1,
+.estudios__caja__imagenes__2,
+.estudios__caja__imagenes__3 {
+    width: 380px;
+    height: 380px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.estudios__caja__imagenes__1 {
+    background-image: url(../../Img/Carrera/santiago\ mariño.svg);
+}
+
+.estudios__caja__imagenes__2 {
+    background-image: url(../../Img/Carrera/Iutirla.svg);
+}
+
+.estudios__caja__imagenes__3 {
+    background-image: url(../../Img/Carrera/latam.svg);
+}
+
+.estudios__caja__imagenes__1:hover {
+    background-image: url(../../Img/Carrera/Santiago\ Mariño\ asignatura.svg);
+    animation: rotate-in-diag-2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.estudios__caja__imagenes__2:hover {
+    background-image: url(../../Img/Carrera/Iutirla\ asignatura.svg);
+    animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.estudios__caja__imagenes__3:hover {
+    background-image: url(../../Img/Carrera/latam\ asignatura.svg);
+    animation: rotate-in-diag-1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes rotate-in-diag-2 {
+    0% {
+        transform: rotate3d(-1, 1, 0, -360deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate3d(-1, 1, 0, 0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-in-center {
+    0% {
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-in-diag-1 {
+    0% {
+        transform: rotate3d(1, 1, 0, -360deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 0, 0deg);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .estudios__caja {
+
+        width: 380px;
+        height: 380px;
+    }
+
+    .estudios__caja__imagenes__1,
+    .estudios__caja__imagenes__2,
+    .estudios__caja__imagenes__3 {
+        width: 375px;
+        height: 375px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+
+}
+

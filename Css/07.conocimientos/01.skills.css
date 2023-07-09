@@ -112,7 +112,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 200px;
+   
 }
 
 .skills__cajas {
@@ -145,7 +145,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-    margin-top: 8px;
+    
 }
 
 .skills__cajas__logo__1 {
