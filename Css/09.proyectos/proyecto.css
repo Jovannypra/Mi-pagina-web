@@ -5,6 +5,12 @@
 
 }
 
+.proyectos__caja__enlace {
+    width: 300px;
+    height: 300px;
+    border: solid greenyellow 1px;
+}
+
 .proyectos__caja {
     display: flex;
     flex-wrap: wrap;
@@ -35,13 +41,5 @@
 
 
 }
-
-
-.proyectos__caja__enlace {
-    width: 300px;
-    height: 300px;
-    border: solid greenyellow 1px;
-}
-
 
 
