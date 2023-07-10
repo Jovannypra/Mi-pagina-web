@@ -1,3 +1,4 @@
+
 // Array para almacenar el estado del juego
 let board = ['', '', '', '', '', '', '', '', ''];
 
@@ -7,15 +8,20 @@ let currentPlayer = 'X';
 // Función para colocar una marca en el tablero
 function placeMark(celda) {
     if (board[celda] === '') {
+        // Colocar la marca en el tablero
         board[celda] = currentPlayer;
         document.getElementsByClassName('cell')[celda].innerHTML = `<img src="${currentPlayer === 'X' ? '../../Img/equis.svg' : '../../Img/circulo.svg'}" alt="${currentPlayer}" class="mark-image" />`;
+
         if (checkWin()) {
+            // Verificar si hay una combinación ganadora
             alert(currentPlayer + ' Ganó');
             resetBoard();
         } else if (board.every(celda => celda !== '')) {
+            // Verificar si hay un empate
             alert('Es un empate');
             resetBoard();
         } else {
+            // Cambiar al siguiente jugador
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
         }
     }
@@ -48,7 +54,6 @@ function resetBoard() {
     for (let celda of celdas) {
         celda.innerHTML = '';
     }
-
     // Recargar la página
     location.reload();
 }
@@ -78,24 +83,3 @@ handleWindowResize();
 
 // Mensaje indicando que el programa fue creado por Jovanny Prado
 console.log('Este programa fue creado por Jovanny Prado.');
-
-
-/*! Js para el boton */
-
-var animateButton = function (e) {
-
-    e.preventDefault;
-    //reset animation
-    e.target.classList.remove('animate');
-
-    e.target.classList.add('animate');
-    setTimeout(function () {
-        e.target.classList.remove('animate');
-    }, 700);
-};
-
-var bubblyButtons = document.getElementsByClassName("bubbly-button");
-
-for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('click', animateButton, false);
-}
