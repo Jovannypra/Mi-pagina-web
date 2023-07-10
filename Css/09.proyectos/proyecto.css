@@ -1,17 +1,10 @@
-.proyectos {
-
-
+.proyectos__contenedor {
     border: solid 1px blueviolet;
-
 }
 
-.proyectos__caja__enlace {
-    width: 300px;
-    height: 300px;
-    border: solid greenyellow 1px;
-}
 
-.proyectos__caja {
+
+.proyectos{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -20,8 +13,35 @@
     border: solid 1px blueviolet;
 }
 
-.proyectos__caja__1 {
+.proyecto__1 {
     background-image: url(../../Img/proyectos/encriptador.svg);
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.proyectos__caja__1 {
+    display: flex;
+    border:  solid 1px white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.enlace__1 {
+    width: 300px;
+    height: 300px;
+    border: solid greenyellow 1px;
+}
+
+.proyecto__2 {
+    background-image: url(../../Img/proyectos/tictactoe_proyecto.svg);
     width: 300px;
     height: 300px;
     background-size: contain;
@@ -32,14 +52,17 @@
 
 .proyectos__caja__2 {
     display: flex;
+    border:  solid 1px white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 300px;
     height: 300px;
     margin: 10px;
-
-
 }
 
-
+.enlace__2 {
+    width: 300px;
+    height: 300px;
+    border: solid greenyellow 1px;
+}
