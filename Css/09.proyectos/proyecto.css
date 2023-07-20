@@ -12,7 +12,7 @@
     align-items: center;
     margin: 5px;
     text-align: center;
-    border: solid var(--Colorrosa) 1px;
+    border: solid 1px rgba(255, 192, 203, 0.062);
 
 }
 
@@ -22,7 +22,7 @@
     align-items: center;
     margin: 5px;
     text-align: center;
-    border: solid var(--Colorrosa) 1px;
+    border: solid 1px rgba(216, 112, 147, 0.24);
 }
 
 .proyecto__1 {

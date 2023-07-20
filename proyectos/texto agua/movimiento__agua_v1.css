@@ -1,4 +1,6 @@
-
+body{
+    background-color: black;
+}
 .agua span {
     width: 100%;
     display: flex;
@@ -61,3 +63,4 @@
         font-size:200%;
     }
 }
+
