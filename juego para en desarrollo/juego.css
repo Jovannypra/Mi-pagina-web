@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+
+}
+.margen{
+    margin-bottom: 50px;
+}
+
+a:hover{
+    color: brown;
+    font-weight: bold;
+}

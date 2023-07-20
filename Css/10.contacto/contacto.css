@@ -7,10 +7,8 @@
 }
 
 form {
-
     display: flex;
     justify-content: center;
-
 }
 
 input,
@@ -18,8 +16,6 @@ textarea {
     padding: 5px;
     border: 1px solid hsla(202, 100%, 71%, 0.062);
 }
-
-
 
 .form-control {
     display: flex;
@@ -47,7 +43,6 @@ input[type="submit"] {
     padding: 16px 32px;
     position: relative;
     border-radius: 10px;
-
 }
 
 .enviar__texto::before {
@@ -90,7 +85,6 @@ fieldset {
 ::placeholder {
     background-color: transparent;
     text-align: center;
-
 }
 
 :placeholder-shown {
@@ -163,8 +157,6 @@ fieldset {
     height: 100px;
 }
 
-
-
 @media only screen and (max-width: 766px) {
     .contacto {
         display: flex;
@@ -178,7 +170,6 @@ fieldset {
         margin-top: 10px;
         width: 100%;
     }
-
 }
 
 .enlaces__final {
@@ -190,7 +181,6 @@ fieldset {
 .enlaceF {
     display: flex;
     justify-content: center;
-    ;
 }
 
 .corazon {
