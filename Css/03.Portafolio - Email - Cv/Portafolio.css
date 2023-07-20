@@ -8,19 +8,14 @@
     justify-content: center;
 }
 
-
 .portafolio__bienvenida__texto {
     color: var(--Colorazul);
-
 }
-
-@media only screen and (max-width: 768px) {}
 
 .portafolio__bienvenida__texto {
     text-align: center;
     font-size: 30px;
 }
-
 
 @media only screen and (max-width: 480px) {
     .portafolio__bienvenida__texto {
@@ -29,7 +24,6 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-
 }
 
 @media only screen and (max-width: 360px) {
@@ -37,9 +31,6 @@
         font-size:18px ;
     }
 }
-
-
-
 
 /*! Email */
 
@@ -52,19 +43,15 @@
 .animacionEmail {
     color: var(--colorrojo);
     text-decoration: none;
-
-
 }
 
 .animacionEmail:hover {
     color: var(---coloroliva);
     animation: none;
-
 }
 
 .animacionEmail {
     animation: text-flicker-in-glow 4s linear 2s infinite alternate-reverse both;
-
 }
 
 @keyframes text-flicker-in-glow {
@@ -229,15 +216,12 @@
 .portafolio__descarga__icono {
     color: black;
     text-decoration: none;
-    cursor: url(/Img/descarga.svg), auto;
+    cursor: url(../..//Img/descarga.svg), auto;
     font-size: 18px;
     font-weight: bold;
-
-
 }
 
 .portafolio__descarga__boton {
     background-color: var(--coloroliva);
     font-family: 'Playfair Display', serif;
-
 }

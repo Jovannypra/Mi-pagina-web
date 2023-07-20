@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./Css/07.conocimientos/01.skills.css">
     <link rel="stylesheet" href="./Css/08.Estudios/estudios.css">
     <link rel="stylesheet" href="./Css/09.proyectos/proyecto.css">
+    <link rel="stylesheet" href="./Css/10.contacto/contacto.css">
 
 
 
@@ -43,6 +44,7 @@
 
 <body data-bs-theme="light">
     <header>
+        <a name="principal"  href=""></a>
         <nav class="navbar navbar-expand-lg bg-body-white ">
             <div class="container-fluid menu__general">
 
@@ -69,16 +71,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 menu">
                         <li class="nav-item menu__lista">
-                            <a class="nav-link menu__lista__1" href="#">Sobre mi</a>
+                            <a class="nav-link menu__lista__1" href="sobre.html#sobreMi">Sobre mi</a>
                         </li>
                         <li class="nav-item menu__lista">
-                            <a class="nav-link menu__lista__2" href="#">Skills</a>
+                            <a class="nav-link menu__lista__2" href="#habilidades">Skills</a>
                         </li>
                         <li class="nav-item menu__lista">
-                            <a class="nav-link menu__lista__3" href="#">Formacion</a>
+                            <a class="nav-link menu__lista__3" href="#formacion">Formacion</a>
                         </li>
                         <li class="nav-item menu__lista">
-                            <a class="nav-link menu__lista__4" href="#">Contacto</a>
+                            <a class="nav-link menu__lista__4" href="#contacto">Contacto</a>
                         </li>
 
                         <!-- Otro menu Desplegable -->
@@ -86,15 +88,17 @@
                         <li class="nav-item dropdown menu__lista">
                             <a class="nav-link dropdown-toggle menu__lista__5" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Proyectos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#proyectojuegos">Proyectos</a></li>
+                                <li><a class="dropdown-item" href="otrosProyectos.html#otros">Otros proyectos</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="sobre.html#enDesarrollo">En desarrollo</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -198,6 +202,7 @@
         <!--! Mensajes habilidades -->
 
         <div class=" habilidades">
+            <a name="habilidades" href=""></a>
             <p class="habilidades__palabra__1">Mis</p>
             <div id=cambio__habilidades>
                 <div>
@@ -225,8 +230,9 @@
 
 
         <!--!   conocimientos  -->
+        
         <div class="skills">
-
+            <a name="Skills__2" href=""></a>
             <div class="skills__cajas ">
                 <div class="skills__cajas__logo skills__cajas__logo__1"></div>
             </div>
@@ -288,7 +294,7 @@
         <div class="estudios__caja">
             <div class="estudios__caja__imagenes__2"></div>
         </div>
-
+        <a name="formacion" href=""></a>
         <div class="estudios__caja">
             <div class="estudios__caja__imagenes__3"></div>
         </div>
@@ -297,35 +303,147 @@
 
     <!--! proyectos -->
 
-    <div class="proyectos__contenedor">
 
-        <div class="proyectos">
+
+
+
+    <div class="proyecto__centrado">
+        <a name="proyectojuegos" href=""></a>
+        <div class="proyectos" id="box">
             <div class="proyecto__1"></div>
-            <div class="proyectos__caja__1 enlace__1">
-                <p>Encriptador de texto</p>
-                <a href="https://lustrous-mandazi-b88c23.netlify.app/">
-
-                    <p>Enlace</p>
-
+            <div class="proyectos__texto">
+                <p class="texto">ENCRIPTADOR DE TEXTO</p>
+                <a class="proyecto__enlace" href="https://lustrous-mandazi-b88c23.netlify.app/">
+                    Enlace al juego
                 </a>
             </div>
         </div>
+
+
+
+
+
+
+
+
+        <div class="proyectos__2">
+            <div class="proyectos__texto">
+                <p class="texto">JUEGO DEL AHORCADO</p>
+                <a class="proyecto__enlace" href="https://delicate-twilight-c307dd.netlify.app">enlace al juego</a>
+            </div>
+
+            <div class="video video__2">
+                <video src="./video/ahorcado.mp4" controls loop></video>
+            </div>
+
+        </div>
+
+
 
         <div class="proyectos">
-            <div class="proyecto__2"></div>
-            <div class="proyectos__caja__2 enlace__2">
-                <p>Tic tac toe</p>
-                <a href="https://lustrous-mandazi-b88c23.netlify.app/">
+            <div class="video video__1">
+                <video src="./video/tic tac.mp4" controls loop></video>
+            </div>
+            <div class="proyectos__texto">
+                <p class="texto">TIC TAC TOC</p>
+                <a class="proyecto__enlace" href="https://dancing-genie-2bad15.netlify.app">
+                    Enlace al juego
+                </a>
+            </div>
+        </div>
+    </div>
 
-                    <p>Enlace</p>
+    <!--! CONTACTO -->
 
+
+    <div class="contacto ">
+        <div>
+            <img src="./Img/contacto/imagencontacto.gif" alt="">
+        </div>
+
+
+        <form action="mailto:jovannyrenaware@gmail.com" class="prueba2">
+            <fieldset>
+                <legend style="text-align: center;">Contacto</legend>
+                <div class="form-control ">
+                    <label for="name" style="text-align: center;">Nombre</label>
+                    <input type="name" id="name" placeholder="Introduce tu nombre" required />
+                </div>
+
+                <div class="form-control">
+                    <label for="email" style="text-align: center;">Email</label>
+                    <input type="email" id="email" placeholder="Introduce tu Email" required />
+                </div>
+
+                <div class="form-control">
+                    <label for="message" style="text-align: center;">Mensaje</label>
+                    <textarea id="message" cols="30" rows="10" placeholder="Introduce tu mensaje" required></textarea>
+                </div>
+                <div class="contacto__enviar">
+                    <button class="submit-btn enviar__texto">
+                        <input type="submit" value="Enviar" />
+                    </button>
+
+                </div>
+
+
+
+            </fieldset>
+        </form>
+    </div>
+
+
+    <footer>
+        <a name="contacto" href=""></a>
+        <div class="redes__2">
+            <div>
+                <a href="https://w.app/Erbarbaz">
+                    <img class="boton_whasapp" src="./Img/contacto/whasaap.svg" alt="">
+                </a>
+            </div>
+            <a href="https://github.com/Jovannypra">
+                <img class="boton_whasapp" src="./Img/Skills/Logos/github.svg" alt="">
+            </a>
+            <div>
+                <a href="https://www.linkedin.com/in/jovannypra/">
+                    <img class="boton_whasapp" src="./Img/Skills/Logos/linke.svg" alt="">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.youtube.com/channel/UCiBDNL7YQr61V8FxChAqtBA">
+                    <img class="boton_whasapp" src="./Img/Skills/Logos/youtube.svg" alt="">
+                </a>
+            </div>
+
+            <div>
+                <a href="tel://993922797">
+                    <img class="boton_whasapp" src="./Img/Skills/Logos/tlf.svg" alt="">
                 </a>
             </div>
         </div>
 
+        <div class="final">
+            <p class="final__texto">Desarrollado con <img class="corazon" src="./Img/red-heart-heart.gif" alt=""> por Jovanny Prado</p>
+
+        </div>
+        <div class="separacion"></div>
+    </footer>
 
 
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,7 @@
+/* Importar archivo de estilos Menunombre.css del directorio superior */
 @import "../NombrePrincipal/Menunombre.css";
 
+/* Estilos para el contenedor de las redes sociales */
 .redes {
     display: flex;
     flex-direction: column;
@@ -7,11 +9,13 @@
     margin: 20px;
 }
 
+/* Estilos para los íconos de las redes sociales */
 .iconos {
     width: 50px;
     height: 50px;
 }
 
+/* Estilos para el contenedor de cada ícono */
 .redes__caja {
     display: flex;
     width: 50px;
@@ -19,7 +23,7 @@
     margin: 10px;
 }
 
-/*! animacion dispositivos grandes 3 botones */
+/* Animación intermitente para los íconos en dispositivos grandes */
 .redes__caja__animacion {
     animation: blink-1 10s infinite alternate-reverse both;
 }
@@ -33,43 +37,51 @@
     }
 }
 
+/* Desactivar animación al hacer hover en el contenedor de los íconos */
 .redes__caja__animacion:hover {
     animation: none;
 }
 
+/* Estilos para el detalle de la primera red social */
 .redes__detalle__1 {
     color: var(--colorrojo);
 }
 
+/* Estilos para el detalle de la segunda red social */
 .redes__detalle__2 {
     color: var(--Colorrosa);
 }
 
+/* Estilos para el detalle de la tercera red social */
 .redes__detalle__3 {
     color: var(--colormoka);
 }
 
-/*! Animacion salida hover 1 */
+/* Animación al hacer hover en el detalle de la primera red social */
 .redes__detalle__1:hover {
     color: var(--Colorazul);
 }
 
+/* Animación al hacer hover en el detalle de la segunda red social */
 .redes__detalle__2:hover {
     color: var(--coloroliva);
 }
 
+/* Animación al hacer hover en el detalle de la tercera red social */
 .redes__detalle__3:hover {
     color: var(--colorrojo);
 }
 
-/*! Diferentes dispositivos */
+/* Estilos para diferentes dispositivos con un ancho máximo de 480px */
 @media only screen and (max-width: 480px) {
+    /* Cambiar la dirección del contenedor de las redes sociales a fila */
     .redes {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
     }
 
+    /* Aumentar el tamaño de los íconos para dispositivos pequeños */
     .iconos {
         width: 65px;
         height: 65px;

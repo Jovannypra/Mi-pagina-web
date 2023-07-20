@@ -1,19 +1,32 @@
-.proyectos__contenedor {
-    border: solid 1px blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import "../NombrePrincipal/Menunombre.css";
+
+.proyecto__centrado {
+    margin: 0 auto;
+    width: 90%;
 }
 
-
-
-.proyectos{
+.proyectos {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
-    border: solid 1px blueviolet;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+    border: solid var(--Colorrosa) 1px;
+
+}
+
+.proyectos__2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+    border: solid var(--Colorrosa) 1px;
 }
 
 .proyecto__1 {
+
     background-image: url(../../Img/proyectos/encriptador.svg);
     width: 300px;
     height: 300px;
@@ -21,48 +34,127 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: 10px;
+
 }
 
-.proyectos__caja__1 {
+
+
+.video {
     display: flex;
-    border:  solid 1px white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-}
-
-.enlace__1 {
-    width: 300px;
-    height: 300px;
-    border: solid greenyellow 1px;
-}
-
-.proyecto__2 {
-    background-image: url(../../Img/proyectos/tictactoe_proyecto.svg);
-    width: 300px;
-    height: 300px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 10px;
-}
-
-.proyectos__caja__2 {
     display: flex;
-    border:  solid 1px white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 300px;
     height: 300px;
     margin: 10px;
+
 }
 
-.enlace__2 {
-    width: 300px;
-    height: 300px;
-    border: solid greenyellow 1px;
+.texto {
+    font-size: 20px;
+    font-weight: 800;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+    color: var(--coloroliva);
+}
+
+.proyectos__texto {
+    margin-bottom: 10px;
+}
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+.texto:hover {
+    color: var(--colorrojo);
+}
+
+.proyecto__enlace {
+    text-decoration: none;
+    color: var(--Colorrosa);
+
+}
+
+.proyecto__enlace:hover {
+    background-color: var(--coloroliva);
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyectos__2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

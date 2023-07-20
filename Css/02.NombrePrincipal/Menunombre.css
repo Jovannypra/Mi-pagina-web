@@ -6,7 +6,9 @@
     --coloroliva: hsl(64, 76%, 71%);
     --colormoka: hsl(36.136, 60%, 71%);
     --colorrojo: hsl(353, 100%, 50%);
-    --colorblanco:hsl(0, 0%, 96%);
+    --colorblanco: hsl(0, 0%, 96%);
+    --colorNegro: hsl(0, 0%, 0%);
+    --colorGris: hsl(0, 0%, 20%);
 }
 
 /* MI NOMBRE PRINCIPAL */

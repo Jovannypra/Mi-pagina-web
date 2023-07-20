@@ -112,7 +112,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
 }
 
 .skills__cajas {
@@ -145,7 +144,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-    
+
 }
 
 .skills__cajas__logo__1 {
@@ -262,7 +261,7 @@
 }
 
 .skills__cajas__logo__12:hover {
-    background-image: url(../..//Img/Skills/porcentajes/pronto\ mensaje.svg);
+    background-image: url(/pronto.html);
     background-position: center;
     background-repeat: no-repeat;
     width: 80%;
